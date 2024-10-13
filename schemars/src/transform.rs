@@ -153,7 +153,7 @@ pub fn transform_subschemas<T: Transform + ?Sized>(t: &mut T, schema: &mut Schem
             | "then"
             | "else"
             | "contains"
-            | "additionalProperties"
+            //| "additionalProperties"
             | "propertyNames"
             | "additionalItems" => {
                 if let Ok(subschema) = value.try_into() {
